@@ -71,6 +71,14 @@ img {
   transform: translatey(-50%) translateX(0);
   right: -20%;
 }
+@media (max-width: 767px) {
+  .main-heading::before {
+    left: -10px;
+  }
+  .main-heading::after {
+    right: -10px;
+  }
+}
 .main-heading:hover::before {
   z-index: -1;
   animation: left-move 0.5s linear forwards;
